@@ -1880,3 +1880,113 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/**
+ * #CONTACT
+ */
+
+/**
+ * #CONTACT
+ */
+
+ .contact-info {
+  margin-bottom: 30px;
+  color: var(--white-2); /* Add this line */
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: var(--white-2); /* Add this line */
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info li strong {
+  min-width: 100px;
+  font-weight: 600;
+}
+
+.contact-info li a {
+  color: var(--white-2); /* Change this line */
+  transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+.contact-image {
+  margin-bottom: 30px;
+}
+
+.contact-image img {
+  height: 450px;
+  width: 720px;
+  object-fit: cover;
+  border-radius: 8px; /* Add this line to give the image a subtle rounded corner */
+}
+
+/**
+ * My Tech Stack
+ */
+
+ .tech-stack {
+  margin-bottom: 30px;
+}
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 -15px;
+  padding: 25px 15px;
+  padding-bottom: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.tech-stack-item {
+  min-width: 120px;
+  scroll-snap-align: center;
+}
+
+.tech-stack-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--eerie-black-2);
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.tech-stack-item a:hover {
+  background-color: var(--jet);
+}
+
+.tech-stack-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .service-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-stack-list {
+    justify-content: flex-start;
+  }
+}
