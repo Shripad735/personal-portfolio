@@ -40,5 +40,3 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
-
-// Other functionalities (testimonials, custom select, contact form) should be correctly implemented as per your requirements.
