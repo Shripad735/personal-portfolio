@@ -1929,11 +1929,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .contact-image img {
-  height: 450px;
-  width: 720px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px; /* Add this line to give the image a subtle rounded corner */
+  border-radius: 8px;
+  max-width: 720px; /* Maintain a max-width for larger screens */
 }
+
+/* Optional: Additional styles for smaller screens */
+@media (max-width: 768px) {
+  .contact-image img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-image img {
+    max-height: 200px;
+  }
+}
+
 
 /**
  * My Tech Stack
